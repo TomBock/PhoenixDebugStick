@@ -1,0 +1,16 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: DEBUG_STICK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"Debug Stick","bold":true,"color":"yellow"}'
+    lore:
+      - '{"text":"_","color":"gray"}'
+ignored:
+  - CHEST
+  - GRASS_BLOCK
+msg:
+  not-allowed: "&7Das darfst du nicht!"
+  item-received: "&aDu hast einen Debug Stick erhalten!"

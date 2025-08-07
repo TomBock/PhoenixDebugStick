@@ -1,0 +1,16 @@
+name: PhoenixDebugStick
+version: '1.0'
+main: com.bocktom.phoenixDebugStick.PhoenixDebugStick
+api-version: '1.21'
+commands:
+  debugstick:
+    description: Holt einen Debug Stick
+    usage: /debugstick
+    permission: debugstick.admin
+permissions:
+  debugstick.use:
+    description: Erlaubt die Nutzung des Debug Sticks für User
+    default: true
+  debugstick.admin:
+    description: Erlaubt die Nutzung des Befehls um Debug Sticks zu erhalten
+    default: op
