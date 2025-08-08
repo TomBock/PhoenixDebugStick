@@ -11,8 +11,8 @@ public final class PhoenixDebugStick extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		plugin = this;
-		getConfig().options().copyDefaults(true);
-		saveConfig();
+		saveDefaultConfig();
+		reloadConfig();
 
 		debugStick = getConfig().getItemStack("item");
 		if(debugStick == null) {

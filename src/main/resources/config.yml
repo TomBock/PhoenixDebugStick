@@ -12,5 +12,5 @@ ignored:
   - CHEST
   - GRASS_BLOCK
 msg:
-  not-allowed: "&7Das darfst du nicht!"
-  item-received: "&aDu hast einen Debug Stick erhalten!"
+  not-allowed: "§7Das darfst du nicht!"
+  item-received: "§aDu hast einen Debug Stick erhalten!"

@@ -41,6 +41,9 @@ public class PlayerListener implements Listener {
 		if(!PhoenixDebugStick.plugin.getConfig().getList("ignored").contains(clicked.getType().toString()))
 			return;
 
+		if(player.hasPermission("debugstick.admin")) // Admins are allowed to use the debug stick on any block
+			return;
+
 		player.sendMessage(MSG.get("not-allowed"));
 		event.setCancelled(true);
 	}
