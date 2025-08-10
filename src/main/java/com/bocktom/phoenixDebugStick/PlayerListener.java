@@ -21,7 +21,9 @@ public class PlayerListener implements Listener {
 		if(item.getType() != Material.DEBUG_STICK)
 			return;
 
+
 		if(!item.isSimilar(PhoenixDebugStick.plugin.debugStick)) {
+
 			// Allow only admins to use other debug sticks
 			if(!player.hasPermission("debugstick.admin")) {
 				player.sendMessage(MSG.get("not-allowed"));
@@ -38,7 +40,9 @@ public class PlayerListener implements Listener {
 		if(clicked == null)
 			return;
 
-		if(!PhoenixDebugStick.plugin.getConfig().getList("ignored").contains(clicked.getType().toString()))
+		String blockType = clicked.getType().toString();
+		boolean isIgnored = PhoenixDebugStick.plugin.getConfig().getList("ignored").contains(blockType);
+		if(!isIgnored)
 			return;
 
 		if(player.hasPermission("debugstick.admin")) // Admins are allowed to use the debug stick on any block
