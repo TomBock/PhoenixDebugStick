@@ -22,6 +22,7 @@ public class PlayerListener implements Listener {
 			return;
 
 
+		/*
 		if(!item.isSimilar(PhoenixDebugStick.plugin.debugStick)) {
 
 			// Allow only admins to use other debug sticks
@@ -33,7 +34,7 @@ public class PlayerListener implements Listener {
 				// Admins can use any debug stick
 				return;
 			}
-		}
+		}*/
 
 		Block clicked = event.getClickedBlock();
 
